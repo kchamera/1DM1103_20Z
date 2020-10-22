@@ -3,13 +3,13 @@
 
 int main(int argc, char *argv[]) {
     
-    float v;
-    float a;
+    int v;
+    int a;
     
     a = atof(argv[1]);
     v = a*a;
     
-    printf("Wartość %.f do kwadratu to %.f.\n", a, v);
+    printf("Wartość %.d do kwadratu to %.d.\n", a, v);
     
     return  0;
 }
