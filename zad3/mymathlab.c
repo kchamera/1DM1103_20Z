@@ -88,9 +88,9 @@ struct macierz prod(struct macierz mac, struct macierz macb)
     struct macierz wynik;
         wynik.r = mac.r;
         wynik.c = macb.c;
-        for(int i=0; i<macb.r; i++)
-            for(int j=0; j<mac.c; j++)
-                for(int p=0; p<macb.r; p++)
+        for(int i=0; i<mac.r; i++)
+            for(int j=0; j<macb.c; j++)
+                for(int p=0; p<mac.c; p++)
                 {
                     wynik.tab[i][j] += mac.tab[i][p] * macb.tab[p][j];
                 }
