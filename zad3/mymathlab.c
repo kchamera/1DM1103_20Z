@@ -156,7 +156,7 @@ int main(int argc, char *argv[]) {
         else{
             wypisz(mac);
             wypisz(macb);
-            printf("Suma macierzy %s i %s = ", argv[2], argv[3]);
+            printf("Suma macierzy %s i %s =\n", argv[2], argv[3]);
             wypisz(wynik);
             printf("\n");
             }
@@ -180,7 +180,7 @@ int main(int argc, char *argv[]) {
         else{
             wypisz(mac);
             wypisz(macb);
-            printf("Roznica macierzy %s i %s = ", argv[2], argv[3]);
+            printf("Roznica macierzy %s i %s =\n", argv[2], argv[3]);
             wypisz(wynik2);
             printf("\n");
             }
@@ -198,7 +198,7 @@ int main(int argc, char *argv[]) {
         }
         else{
         wypisz(mac);
-        printf("Iloczyn macierzy %s przez skalar %s = ", argv[2], argv[3]);
+        printf("Iloczyn macierzy %s przez skalar %s =\n", argv[2], argv[3]);
         wypisz(wynik3);
         printf("\n");
         }
@@ -215,7 +215,7 @@ int main(int argc, char *argv[]) {
         else{
         wypisz(mac);
         wypisz(macb);
-        printf("Iloczyn macierzy %s i %s = ", argv[2], argv[3]);
+        printf("Iloczyn macierzy %s i %s =\n", argv[2], argv[3]);
         wypisz(wynik4);
         printf("\n");
             }
