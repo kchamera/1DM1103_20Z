@@ -1,0 +1,7 @@
+Aby wywołać program:
+    ./main   *co_chcemy_aby_pokazalo   plik_zrodlowy
+
+* 
+najlepszy_student
+najlatwiejszy_przedmiot
+najtrudniejszy_przedmiot
