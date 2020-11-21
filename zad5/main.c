@@ -7,7 +7,7 @@
 int main(int argc, char ** argv) {
     student dane[100];
     int ile;
-
+if (argc == 3){
     ile = wczytaj(dane, argv[2]);
     wypisz(dane, ile);
 
@@ -21,7 +21,11 @@ int main(int argc, char ** argv) {
     najlatwiejszy_przedmiot(dane,ile);
     }
     else {
-    printf("Nierozpoznany argument %s.\n", argv[1]);
+    printf("Nierozpoznana nazwa operacji - %s.\n", argv[1]);
     }
+}
+else{
+    printf("Niewystarczajaca liczba argumentow.\n");
+}
     return 0;
 }
