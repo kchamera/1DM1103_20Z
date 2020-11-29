@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
         
     fin  = fopen(argv[2], "r");
     mac = wczytaj(fin);
- if ( strcmp( argv[1], "norm") == 0) {
+    if ( strcmp( argv[1], "norm") == 0) {
         float i = norm(mac);
 
     if(argc == 4){
@@ -44,6 +44,7 @@ int main(int argc, char *argv[]) {
         else{
             printf("Macierzy nie mozna dodac.\n");
         }
+        zwolnij(macb);
     } 
     else if ( strcmp( argv[1], "substract") == 0) {
         fin  = fopen(argv[3], "r");
@@ -64,6 +65,7 @@ int main(int argc, char *argv[]) {
         else{
             printf("Macierzy nie mozna odjac.\n");
         }
+        zwolnij(macb);
     } 
     else if ( strcmp( argv[1], "prod") == 0) {
         fin  = fopen(argv[3], "r");
@@ -84,6 +86,7 @@ int main(int argc, char *argv[]) {
         else{
             printf("Macierzy nie mozna pomnozyc.\n");
         }
+        zwolnij(macb);
     } 
     else if ( strcmp( argv[1], "multiply") == 0) {
 
@@ -101,6 +104,6 @@ int main(int argc, char *argv[]) {
         printf("Nierozpoznany argument %s. Oczekiwałem: norm lub sum lub substract lub multiply lub prod.\n", argv[1]);
     }    
     zwolnij(mac);
-    zwolnij(macb);
+   
     return 0;
 }
