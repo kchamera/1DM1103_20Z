@@ -1,1 +1,1 @@
-# 1DM1103_20Z
+Zadania w MatLabie zrealizowane w języku C na potrzeby przedmiotu metody numeryczne.
